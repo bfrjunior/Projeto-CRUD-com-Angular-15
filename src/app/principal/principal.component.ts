@@ -12,7 +12,7 @@ export class PrincipalComponent {
   // Objeto do tipo Cliente
   cliente = new Cliente();
 
-  //variavel para visibilidade dos botões
+  // variavel para visibilidade dos botões
   btnCadastro:boolean = true;
 
   // Variável para visibilidade da tabela
