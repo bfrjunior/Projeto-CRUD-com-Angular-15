@@ -16,6 +16,6 @@ export class ClienteService {
 
   //Método para selecionar todos os Clientes
   selecionar():Observable<Cliente[]>{
-    return this.http.get<Cliente[]>(this.url);
+    return this.http.get<Cliente[]>(`${this.url}/list`);
   }
 }
