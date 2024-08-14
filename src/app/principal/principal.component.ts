@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PrincipalComponent {
 
+  //variavel para visibilidade dos botões
+  btnCadastro:boolean = true;
+
+  // Variável para visibilidade da tabela
+  tabela:boolean = true;
+
 }
