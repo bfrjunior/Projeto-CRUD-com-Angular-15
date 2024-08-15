@@ -1,27 +1,76 @@
-# AppClientesAngular15
+# Projeto CRUD com Angular 15
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+Este projeto é uma aplicação simples de CRUD (Create, Read, Update, Delete) desenvolvida com Angular 15. A aplicação permite criar, visualizar, atualizar e excluir itens em uma lista. É um exemplo prático para demonstrar o uso de formulários, roteamento e comunicação com uma API RESTful usando Angular.
 
-## Development server
+### 📋 Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Listagem de clientes.
+* Cadastro de novos clientes.
+* Edição de clientes existentes.
+* Exclusão de clientes.
+* Validação de formulários.
+* Integração com API RESTful.
 
-## Code scaffolding
+## 🚀 Tecnologias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Angular 15: Framework principal para a construção da aplicação.
+* TypeScript: Linguagem usada para o desenvolvimento.
+* Bootstrap/Material: (Opcional) Para estilização da interface.
+* RxJS: Para manipulação de observables.
+* Angular CLI: Ferramenta de linha de comando para gerenciar o projeto
 
-## Build
+### 📋 Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
-## Running unit tests
+ * Node.js
+ * Angular CLI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 🎲 Rodando o projeto
 
-## Running end-to-end tests
+```
+# Clone este repositório
+git clone https://github.com/usuario/projeto-crud-angular.git
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Acesse a pasta do projeto no terminal/cmd
+cd projeto-crud-angular
 
-## Further help
+# Instale as dependências
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Execute a aplicação em modo de desenvolvimento
+ng serve
+
+# O servidor inciará na porta:4200 - acesse http://localhost:4200
+```
+### 🔧 Estrutura do Projeto
+```
+projeto-crud-angular/
+│
+├── src/
+│   ├── app/
+│   │   ├── components/    # Componentes da aplicação
+│   │   ├── services/      # Serviços para comunicação com a API
+│   │   ├── models/        # Modelos de dados usados na aplicação
+│   │   ├── app-routing.module.ts   # Configuração de rotas
+│   │   └── app.module.ts  # Módulo principal da aplicação
+│   ├── assets/            # Recursos estáticos
+│   ├── environments/      # Configurações de ambiente
+│   └── index.html         # Página principal
+│
+├── angular.json           # Configurações do Angular CLI
+├── package.json           # Dependências e scripts do projeto
+└── README.md              # Documentação do projeto
+
+```
+
+
+## ✒️ Autores
+
+bfrjunior
+
+## 🎁 Expressões de gratidão
+
+* Conte a outras pessoas sobre este projeto 📢;
+* Convide alguém da equipe para uma cerveja 🍺;
+* etc.
