@@ -46,6 +46,20 @@ export class PrincipalComponent {
     .subscribe(retorno => this.clientes = retorno);
   }
 
+    // Método para selecionar um cliente específico
+    selecionarCliente(posicao:number):void{
+
+      // Selecionar cliente no vetor
+      this.cliente = this.clientes[posicao];
+
+      // Visibilidade dos botões
+      this.btnCadastro = false;
+
+      // Visibilidade da tabela
+      this.tabela = false;
+
+    }
+
       // Método de inicialização
       ngOnInit(){
         this.selecionar();
