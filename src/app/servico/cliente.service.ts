@@ -24,4 +24,15 @@ export class ClienteService {
     return this.http.post<Cliente>(`${this.url}/cadastrar`, obj);
   }
 
+   // Método para editar clientes
+   editar(obj:Cliente):Observable<Cliente>{
+    return this.http.put<Cliente>(`${this.url}/editar`, obj);
+  }
+
+  // Método para remover clientes
+  remover(codigo:number):Observable<void>{
+    return this.http.delete<void>(this.url + '/' + codigo);
+  }
+
+
 }
